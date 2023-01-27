@@ -33,6 +33,8 @@ def get_noise_model_with_stage_info(input_shape,
                             tf.keras.losses.CategoricalCrossentropy()],
                       metrics=['accuracy'])
     return model
+  
+  
 
 
 def get_model_heart_rate_resnet(arch='resnet18', initial_blocks=(64, 7, 2)):
